@@ -1,0 +1,367 @@
+.page69__container {
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem; 
+}
+
+.page69__header {
+    width: 100%;
+    text-align: left;
+    color: #A61C28;
+    margin-bottom: 2rem;
+}
+
+.page69__text--red {
+    color: #A61C28;
+}
+
+.page69__header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.page69__header p {
+    font-size: 1.8rem;
+    color: #4E4E4E;
+    margin-bottom: 0.5rem;
+}
+
+.page69__header p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.page69__main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.page69__main-aside-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 2rem;
+    width: 100%;
+}
+
+.page69__page-title,
+.page69__question-text {
+    text-align: left;
+    padding-left: 0;
+    margin: 0; 
+    color: #A61C28;
+    font-weight: bold;
+}
+
+.page69__phrase-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.page69__phrase {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.page69__word {
+    font-size: 1.5rem;
+    background-color: #d3d3d3;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.page69__word--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.page69__input-phrase {
+    display: flex;
+    padding: 0.25rem; 
+    border: 0.1rem solid rgb(0, 0, 0); 
+    border-radius: 0.25rem;
+    min-height: 4rem; 
+    width: 90%; 
+    background-color: whitesmoke;
+    overflow-x: auto;
+    margin-top: 2%;
+    position: relative;
+}
+
+.page69__input-phrase::after {
+    display: flex;
+    align-items: center;
+    content: '?';
+    font-size: 1.5rem;
+    color: black;
+    margin-right: 1rem;
+}
+
+.page69__input-phrase .check-icon,
+.page69__input-phrase .wrong-icon {
+    margin-left: 1rem;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.page69__input-phrase .icon--english {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page69__input-phrase .icon--portuguese {
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page69__input-phrase .icon--low-volume {
+    position: absolute;
+    right: 19%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon--english,
+.icon--portuguese,
+.icon--low-volume {
+    cursor: pointer;
+    margin-left: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.page69__chip {
+    font-size: 1.5rem;
+    display: inline-flex; 
+    background-color: #d3d3d3;
+    padding: 0.5rem 0.75rem; 
+    border-radius: 0.5rem;
+    font-weight: bold; 
+    color: black; 
+    margin-right: 0.5rem;
+    min-width: 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.page69__aside-container {
+    flex: 1; 
+    display: block;
+}
+
+.page69__check-button {
+    background-color: #A61C28;
+    color: white;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 4.7rem;
+    width: 12rem;
+}
+
+.page69__check-button:hover {
+    background-color: #821a22;
+}
+
+.page69__table-interrogative-container {
+    width: 90rem;
+    height: 10rem;
+    width: 100%;
+}
+
+.page69__table-header-interrogative {
+    background-color: #A61C28;
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+
+.page69__styled-table-interrogative {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-bottom: 0.5rem;
+}
+
+.page69__thead {
+    border: 0.3rem solid #A61C28;
+}
+
+.highlight {
+    color: #A61C28;
+}
+
+.page69__styled-table-interrogative th {
+    background-color: #888A8C;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 0.0625rem solid #A61C28;
+}
+
+.page69__images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 37rem;
+    margin-top: 4.2rem;
+    margin-left: auto;
+}
+
+.page69__image {
+    border-radius: 5%;
+}
+
+/* Animação do Título Principal */
+.page69__header-title {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Ícones de Áudio no Cabeçalho */
+.page69__audio-icon {
+    width: 3.5rem; /* Tamanho fixo para os ícones */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efeito Hover nos Ícones */
+.page69__audio-icon:hover {
+    transform: scale(1.1);
+}
+
+.page69__icon--correct {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    right: 16%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page69__icon--wrong {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    right: 16%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page69__icons-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8px;
+    background-color: #4E4E4E;
+}
+
+.page69__buttons-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.page69__reset-button {
+  height: 4.7rem;
+  background-color: #A61C28;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-weight: bold;
+  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  width: 12rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.page69__reset-button:hover { background: #821a22; }
+.page69__reset-button:active { transform: translateY(1px); }
+.page69__reset-button:focus-visible {
+  outline: 3px solid #ffd2d6;
+  outline-offset: 3px;
+}
+
+.page69__answersKey-button {
+  background: #0A3282;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-weight: bold;
+  box-shadow: .2rem .2rem .5rem rgba(0,0,0,.3);
+  transition: background-color 0.3s;
+  width: 16rem;
+  text-align: center;
+  font-size: 1.8rem;
+  height: 4.7rem;
+  margin-top: 2rem;
+}
+.page69__answersKey-button:hover { background: #072861; }
+.page69__answersKey-button:active { transform: translateY(1px); }
+.page69__answersKey-button:focus-visible {
+  outline: 3px solid #cbd9ff;
+  outline-offset: 3px;
+}
+
+.page69__answersKey-box {
+  margin-top: 2rem;
+  border: 2px dotted #A61C28;
+  border-radius: 12px;
+  padding: 2rem;
+  background: #fffaf9;
+  max-width: 100%;
+  font-size: 2rem;
+}
+.page69__answersKey-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px dashed #f0c6c9;
+  text-align: left;
+}
+.page69__answersKey-item:last-child { border-bottom: none; }
+.page69__answersKey-num {
+  color: #A61C28;
+  font-weight: 800;
+  min-width: 3rem;
+  text-align: right;
+}
+.page69__answersKey-text {
+  color: #103275;
+  font-weight: 600;
+  line-height: 1.5;
+  flex: 1;
+}

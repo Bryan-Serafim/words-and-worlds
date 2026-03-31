@@ -1,0 +1,159 @@
+.page8__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.page8__header {
+    width: 100%;
+    text-align: left;
+    color: #A61C28;
+}
+
+.page8__header-subtitle {
+    color: black;
+}
+
+.page8__main {
+    width: 100%;
+    text-align: center;
+}
+
+/* Este é um comentário */
+
+.page8__table-header {
+    background-color: #A61C28;
+    color: white;
+    text-align: center !important;
+    padding: 1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+
+.page8__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+    table-layout: fixed;
+}
+
+.page8__table:nth-child(odd) {
+    margin-bottom: 0;
+}
+
+.page8__table thead tr {
+    background-color: #888A8C;
+    color: white;
+    font-weight: bold;
+}
+
+.page8__table th,
+.page8__table td {
+    border: .1rem solid #A61C28;
+    padding: 1rem;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+.page8__table tbody tr {
+    background-color: white;
+    max-width: 100%;
+    height: calc(7vw * 0.85);
+}
+
+.page8__table tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+.page8__table-input {
+    width: 100%;
+    height: calc(8vh * 0.85);
+    border: none;
+    padding: .8rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    font-size: 1.8rem;
+}
+
+.page8__table-input:focus {
+    outline: none;
+    border: .1rem solid #F2F2F2;
+    background-color: white;
+}
+
+.page8__table-input::-webkit-scrollbar {
+    display: none;
+}
+
+.page8__table-subject {
+    width: calc(10vw * 0.85);
+}
+
+.page8__table-auxiliary {
+    width: calc(10vw * 0.85);
+}
+
+.page8__table-adverb {
+    width: calc(12vw * 0.85);
+}
+
+.page8__table-verb {
+    width: calc(12vw * 0.85);
+}
+
+.page8__table-complement {
+    width: calc(18vw * 0.85);
+}
+
+.page8__table-translation {
+    width: calc(18vw * 0.85);
+}
+
+.page8__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    position: relative;
+    top: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.page8__icon:hover {
+    transform: scale(1.2);
+}
+
+.page8__icon-left {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: relative;
+    right: 36%;
+    top: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.page8__icon-left:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+    .page8__table {
+        margin-bottom: 15%;
+    }
+
+    .page8__table th,
+    .page8__table td {
+        padding: .5rem;
+    }
+
+    .page8__table-input {
+        height: calc(6vw * 0.85);
+    }
+}

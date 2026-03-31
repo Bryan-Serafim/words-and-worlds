@@ -1,0 +1,122 @@
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilização das fontes */
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.25rem;
+}
+
+p,
+strong {
+  font-size: 2rem;
+}
+/*
+li {
+  font-size: 3rem;
+}*/
+
+th,
+td,
+textarea,
+input {
+  font-size: 2rem;
+}
+
+/* Configuração para telas maiores */
+
+@media (min-width: 2559px) {
+
+  html {
+    font-size: calc(62.5% * 1.5);
+  }
+
+}
+
+
+
+/* Configuração para telas menores */
+
+
+/* Telas com até 1440p */
+
+@media (max-width: 1440px) {
+  html {
+    font-size: calc(62.5% * 0.85);
+  }
+  
+}
+
+@media (max-width: 1024px) {
+
+  #root {
+    margin: 0;
+  }
+
+  head {
+    margin: 0;
+  }
+
+  header {
+    height: 100%;
+  }
+
+  table tbody tr td,
+  table tbody tr th,
+  table thead tr th {
+    max-height: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: calc(62.5% * 0.7);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: calc(62.5% * 0.6);
+  }
+}
+
+@media (max-width: 680px) {
+
+  html {
+    font-size: calc(62.5% * 0.55);
+  }
+}
+
+@media (max-width: 568px) {
+  html {
+    font-size: calc(62.5% * 0.45)
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: calc(62.5% * 0.4)
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: calc(62.5% * 0.35)
+  }
+}

@@ -1,0 +1,227 @@
+.page10__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.page10__header {
+    width: 100%;
+    text-align: left;
+    color: #A61C28;
+}
+
+.page10__header-subtitle {
+    color: black;
+}
+
+.page10__main {
+    width: 100%;
+    text-align: center;
+}
+
+.page10__aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Este é um comentário */
+
+.page10__table-header {
+    background-color: #A61C28;
+    color: white;
+    text-align: center !important;
+    padding: 1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+
+.page10__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+    table-layout: fixed;
+}
+
+.page10__table:nth-child(odd) {
+    margin-bottom: 0;
+}
+
+.page10__table thead tr {
+    background-color: #888A8C;
+    color: white;
+    font-weight: bold;
+}
+
+.page10__table th,
+.page10__table td {
+    border: .1rem solid #A61C28;
+    padding: 1rem;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+.page10__table tbody tr {
+    background-color: white;
+    max-width: 100%;
+    height: calc(7vw * 0.85);
+}
+
+.page10__table tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+.page10__table-input {
+    width: 100%;
+    height: calc(8vh * 0.85);
+    border: none;
+    padding: .8rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    font-size: 1.8rem;
+}
+
+.page10__table-input:focus {
+    outline: none;
+    border: .1rem solid #F2F2F2;
+    background-color: white;
+}
+
+.page10__table-input::-webkit-scrollbar {
+    display: none;
+}
+
+.page10__table-subject {
+    width: calc(10vw * 0.85);
+}
+
+.page10__table-auxiliary {
+    width: calc(10vw * 0.85);
+}
+
+.page10__table-adverb {
+    width: calc(12vw * 0.85);
+}
+
+.page10__table-verb {
+    width: calc(12vw * 0.85);
+}
+
+.page10__table-complement {
+    width: calc(18vw * 0.85);
+}
+
+.page10__table-translation {
+    width: (18vw * 0.85);
+}
+
+.page10__aside-notes1 {
+    width: 50%;
+    height: 4.5rem;
+    border: 0.4rem solid #0A3282;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
+    background-color: #0A3282;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.page10__aside-notes1 p {
+    font-size: 1.5rem;
+}
+
+.page10__aside-img {
+    height: calc(10px + 0.8vw);
+    width: 2rem;
+    padding-right: .5rem;
+}
+
+.page10__aside-notes2 {
+    width: 50%;
+    height: 100%;
+    border: 0.4rem solid #0A3282;
+    border-top: 0.1rem;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    color: #103275;
+}
+
+.page10__aside-notes2 p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.page10__aside-img-notes {
+    width: 2.5rem;  
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.page10__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    position: relative;
+    top: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.page10__icon:hover {
+    transform: scale(1.2);
+}
+
+.page10__icon-left {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: relative;
+    right: 42%;
+    top: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.page10__icon-left:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+    .page10__table {
+        margin-bottom: 15%;
+    }
+
+    .page10__table th,
+    .page10__table td {
+        padding: .5rem;
+    }
+
+    .page10__table-input {
+        height: calc(6vw * 0.85);
+    }
+
+    .page10__aside-notes1,
+    .page10__aside-notes2 {
+        width: 100%;
+    }
+
+    .page10__aside-notes1 p,
+    .page10__aside-notes2 p {
+        padding: 1rem;
+        font-size: 2.75rem;
+    }
+}

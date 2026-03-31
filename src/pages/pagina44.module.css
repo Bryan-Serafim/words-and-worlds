@@ -1,0 +1,83 @@
+.page44__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.page44__main {
+  width: 100%;
+  text-align: center;
+}
+
+.page44__aside {
+  padding: 0 2%;
+  width: 100%;
+  display: flex;
+  font-size: 1.8rem;
+}
+
+/* Este é um comentário */
+
+.page44__image {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.page44__table-container {
+  width: 100%;
+  display: flex;
+  gap: 8%;
+}
+
+.page44__table {
+  width: 50%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+.page44__header {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  display: flex;
+}
+
+.page44__column {
+  font-size: 2rem;
+  flex: 1;
+  padding: 0.5rem;
+  text-align: start;
+}
+
+.page44__column:nth-child(1) {
+  width: 50%;
+  border-right: 1px solid #ddd;
+}
+
+.page44__row {
+  font-size: 2rem;
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.page44__cell {
+  flex: 1;
+  padding: 0.70rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page44__cell:nth-child(1) {
+  width: 50%;
+  border-right: 1px solid #ddd;
+}
+
+.page44__flag {
+  width: 20px;
+  height: 15px;
+  border: 1px solid #ddd;
+}

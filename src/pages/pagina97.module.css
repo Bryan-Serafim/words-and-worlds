@@ -1,0 +1,400 @@
+.page97__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+.page97__header {
+    width: 100%;
+}
+
+.page97__h1 {
+    text-align: left;
+    font-size: 6rem;
+    color: #8a1720;
+}
+
+.page97__h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    color: #8a1720;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.page97__main {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+/* Este é um comentário */
+
+.page97__container-questoes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.page97__primeiras-questoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.page97__questions-1,
+.page97__questions-2 {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.page97__question {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: black;
+    text-align: left;
+}
+
+.page97__question span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.page97__a-titulo-question {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.page97__numero-question {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.page97__input-box {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.6rem;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+.page97__input-container {
+    width: 25%;
+    gap: 1rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.page97__checkmark-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    pointer-events: none;
+}
+
+.page97__check-button {
+    background-color: #A61C28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    width: 12rem;
+    height: 4.7rem;
+}
+
+.page97__check-button:hover {
+    background-color: #8a1720;
+}
+
+.page97__icons-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 5px;
+}
+
+.page97__additional-icon {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.page97__additional-icon--pulsing {
+    animation: pulse 1s infinite;
+}
+
+.page97__additional-icon:hover {
+    transform: scale(1.2);
+}
+
+.page97__tabela-afirmativa-container {
+    width: 100%;
+}
+
+.page97__table-header-afirmativa {
+    background-color: #A61C28;
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+
+.page97__styled-table-afirmativa {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-bottom: 0.5rem;
+}
+
+.page97__styled-table-afirmativa th {
+    background-color: #ffffff;
+    color: #0A3282 !important;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid #A61C28;
+}
+
+.page97__celula-table {
+    height: 7rem;
+}
+
+.page97__table-container {
+    width: 90rem;
+    height: 10rem;
+}
+
+.page97__table-interrogative-container {
+    width: 90rem;
+    height: 10rem;
+    width: 100%;
+}
+
+.page97__table-header-interrogative {
+    background-color: #A61C28;
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+
+.page97__styled-table-interrogative {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-bottom: 0.5rem;
+}
+
+.page97__thead {
+    border: 0.3rem solid #A61C28;
+}
+
+.page97__highlight {
+    color: #A61C28;
+}
+
+.page97__styled-table-interrogative th {
+    background-color: #ffffff;
+    color: #0A3282 !important;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 0.0625rem solid #A61C28;
+}
+
+.page97__container-imagem {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page97__imagem {
+    width: 100%;
+}
+
+.page97__spam-input {
+    width: 15%;
+}
+
+.page97__header-icon,
+.page97__additional-icon {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.page97__header-icon:hover,
+.page97__additional-icon:hover {
+    transform: scale(1.2);
+    /* Aumenta o ícone ao passar o mouse */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* =========================
+   Overrides / Correções
+   ========================= */
+
+/* permite quebra de linha e alinha pela linha de base para evitar “sobreposição” do input no texto */
+.page97__question{
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .6rem 1rem; /* respiro entre partes do enunciado e input */
+}
+
+/* spans de texto podem encolher e quebrar linha quando necessário */
+.page97__question > span{
+  flex: 0 1 auto;
+  min-width: 0;
+  line-height: 1.35;
+}
+
+/* o container do input deixa de ocupar 25% fixos */
+.page97__input-container{
+  flex: 0 0 auto;
+  width: auto;               /* sobrescreve os 25% */
+  gap: 1rem;
+}
+
+/* largura do input controlada: não “explode” a linha e permanece legível */
+.page97__input-box{
+  width: clamp(12rem, 22vw, 20rem);  /* em vez de 100% */
+  margin-inline: .4rem;
+  box-sizing: border-box;
+}
+
+/* nos itens com dois inputs (seção 3), não use % fixo que estoura linha */
+.page97__spam-input{
+  width: auto;         /* sobrescreve 15% */
+  min-width: 8rem;
+  display: inline-flex;
+}
+
+/* Ações (linha dos botões) */
+.page97__actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Reset */
+.page97__reset--button {
+  height: 4.7rem;
+  background-color: #A61C28;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-weight: bold;
+  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.3);
+  transition: background-color .3s, transform .05s;
+  width: 12rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.page97__reset--button:hover { background: #821a22; }
+.page97__reset--button:active { transform: translateY(1px); }
+.page97__reset--button:focus-visible {
+  outline: 3px solid #ffd2d6;
+  outline-offset: 3px;
+}
+
+/* Answer Key (botão) */
+.page97__answersKey--button {
+  background: #0A3282;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-weight: bold;
+  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.3);
+  transition: background-color .3s, transform .05s;
+  width: 16rem;
+  text-align: center;
+  font-size: 1.8rem; /* tamanho solicitado */
+  height: 4.7rem;
+}
+.page97__answersKey--button:hover { background: #072861; }
+.page97__answersKey--button:active { transform: translateY(1px); }
+.page97__answersKey--button:focus-visible {
+  outline: 3px solid #cfe0ff;
+  outline-offset: 3px;
+}
+.page97__answersKey--button[aria-pressed="true"] {
+  filter: brightness(0.95);
+}
+
+/* Answer Key (lista) */
+.page97__answersKey-box {
+  margin-top: 2rem;
+  border: 2px dotted #A61C28;
+  border-radius: 12px;
+  padding: 2rem;
+  background: #fffaf9;
+  max-width: 100%;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.page97__answersKey-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px dashed #f0c6c9;
+  text-align: left;
+}
+.page97__answersKey-item:last-child { border-bottom: none; }
+
+.page97__answersKey-num {
+  color: #A61C28;
+  font-weight: 800;
+  min-width: 3rem;
+  text-align: right;
+}
+
+.page97__answersKey-text {
+  color: #103275;
+  font-weight: 600;
+  line-height: 1.5;
+  flex: 1;
+  text-align: left;
+  word-break: break-word;
+}

@@ -1,0 +1,309 @@
+.page40__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    align-items: stretch;
+}
+
+.page40__exercise--title {
+    font-weight: bold;
+    text-align: left;
+    color: black;
+    margin-bottom: 1%;
+}
+
+.page40__exercise--question {
+    text-align: left;
+    color: black;
+    font-weight: 700;
+}
+
+.page40__main {
+    flex-direction: column;
+}
+
+.page40__title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.8rem;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.page40__images--container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3%;
+    flex-wrap: wrap;
+}
+
+.page40__image--box {
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page40__image--box img {
+    border: 0.4rem solid #A61C28;
+    border-radius: 0.8rem;
+    width: 30rem;
+    height: 18rem;
+}
+
+.page40__input--box--container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32rem;
+    margin-top: 1rem;
+}
+
+.page40__input--box {
+    border: 0.2rem solid #A61C28;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page40__input--box::placeholder {
+    color: rgb(119, 116, 116);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.page40__checkmark--image {
+    position: absolute;
+    top: 1.5rem;
+    right: -2.5rem;
+    width: 2rem !important;
+    height: 2rem !important;
+    border: none !important;
+}
+
+.page40__sentences--container {
+    margin-top: 3rem;
+    text-align: left;
+    color: black;
+    font-weight: 600;
+}
+
+.page40__sentence {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.page40__sentence p {
+    display: contents;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    flex: 1;
+    width: 50%;
+}
+
+.page40__icons--container {
+    display: contents;
+    align-items: left;
+    gap: 1rem;
+}
+
+.page40__audio--icon,
+.page40__portuguese--audio--icon{
+    margin: 0 0.5%;
+    width: auto;
+    height: 2.5rem;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.page40__volume--audio--icon {
+    margin: 0 0.5%;
+    width: auto;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.page40__audio--icon.page40__pulsing,
+.page40__portuguese--audio--icon.page40__pulsing,
+.page40__volume--audio--icon.page40__pulsing {
+    animation: pulse 1s infinite;
+    filter: brightness(1.2) saturate(1.5);
+}
+
+.page40__check--button {
+    background-color: #A61C28;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+    width: 12rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.page40__check--button:hover {
+    background-color: #8a1720;
+}
+
+.page40__volume--audio--icon {
+    position: relative;
+    top: 0;
+}
+
+.page40__portuguese--audio--icon {
+    position: relative;
+    top: 0;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.page40__volume--audio--icon.page40__active {
+    animation: pulse 1s infinite;
+    filter: brightness(1.5) saturate(1.5);
+    color: #A61C28;
+}
+
+.page40__audio--text {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.page40__audio--text2{
+    text-align: left;
+    font-size: 2.9rem;
+}
+
+.page40__header img {
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+.page40__paragraph {
+    text-align: left;
+    color: #A61C28;
+    font-weight: bold;
+    position: relative;
+    top: 2rem;
+}
+
+.page40__header--icon{
+    position: relative;
+    top: 1.5rem;
+}
+
+.page40__buttons--container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.page40__reset--button {
+  height: 4.7rem;
+  background-color: #A61C28;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-weight: bold;
+  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  width: 12rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.page40__reset--button:hover { background: #821a22; }
+.page40__reset--button:active { transform: translateY(1px); }
+.page40__reset--button:focus-visible {
+  outline: 3px solid #ffd2d6;
+  outline-offset: 3px;
+}
+
+.page40__answersKey--button {
+  background: #0A3282;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-weight: bold;
+  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  width: 16rem;
+  text-align: center;
+  font-size: 2rem;
+  height: 4.7rem;
+}
+.page40__answersKey--button:hover { background: #072861; }
+.page40__answersKey--button:active { transform: translateY(1px); }
+.page40__answersKey--button:focus-visible {
+  outline: 3px solid #cbd9ff;
+  outline-offset: 3px;
+}
+
+.page40__answersKey--box {
+  margin-top: 2rem;
+  border: 2px dotted #A61C28;
+  border-radius: 12px;
+  padding: 2rem;
+  background: #fffaf9;
+  max-width: 100%;
+  font-size: 2rem;
+}
+.page40__answersKey--item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px dashed #f0c6c9;
+}
+.page40__answersKey--item:last-child { border-bottom: none; }
+.page40__answersKey--num { color: #A61C28; font-weight: 800; min-width: 3rem; text-align: right; }
+.page40__answersKey--text { color: #103275; font-weight: 600; line-height: 1.5; }
+
+@media (max-width: 1440px) {
+  .page40__answersKey--box { font-size: 1.8rem; }
+  .page40__answersKey--button,
+  .page40__reset--button { font-size: 1.8rem; }
+}
+@media (max-width: 768px) {
+  .page40__buttons--container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .page40__answersKey--button,
+  .page40__reset--button { width: 100%; }
+  .page40__answersKey--num { min-width: 2.5rem; }
+}

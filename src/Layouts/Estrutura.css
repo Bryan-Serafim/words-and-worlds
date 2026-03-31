@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+Configurações Globais 
+
+Estilização da página
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    color: black;
+}
+
+th {
+    text-align: center !important;
+    color: white !important;
+}
+
+aside {
+    grid-area: aside;
+    background-color: white;
+    display: flex;
+    justify-content: space-between
+}
+
+/* Estilização da estrutura padrão de todas as páginas */
+
+.mainEstrutura {
+    background-color: #EEF4ED;
+    border-radius: 1rem;
+    box-shadow: .5rem .5rem 1.5rem #0235357a;
+    width: 85%;
+    min-width: 85%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.side {
+    width: 8%;
+    background-color: #A61C28;
+    position: relative;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    align-self: stretch;
+}
+
+
+@-moz-document url-prefix() {
+  .mainEstrutura {
+    position: relative;
+  }
+
+  .side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .Content {
+    margin-left: 8%;
+  }
+}
+
+.wordside {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.englishside {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Content {
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    display: flex;
+    width: calc(100% - 45px);
+    /* Subtrai o padding-right */
+    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.navButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: 10%;
+    align-items: center;
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.navButton {
+    background-color: #A61C28;
+    color: white;
+    border: none;
+    margin: 1% 2%;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-weight: bold;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    width: 17%;
+    font-size: 2rem;
+}
+
+.navButton:hover {
+    background-color: #870F21;
+}
+
+.marcador-pagina {
+    display: flex;
+    place-content: center;
+    background-color: #A61C28;
+    color: white;
+    border-radius: 25%;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+    align-items: center;
+    z-index: 10;
+    width: 5%;
+    font-size: 2rem;
+    padding: 1.2rem 2.4rem;
+}
+
+.pageSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pageSelector label {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.pageSelector span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pagina42Content,
+.pagina1Content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.pagina1Content {
+    padding-top: 0;
+}
+
+.pagina42navButtons,
+.pagina1navButtons {
+    padding-right: 4%;
+}
+
+@media (max-width: 1024px) {
+    .wordside {
+        font-size: 3vw;
+    }
+
+    .englishside {
+        font-size: 2vw;
+    }
+
+    .side {
+        width: 10%;
+    }
+
+    .mainEstrutura {
+        background-color: #EEF4ED;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        max-height: none;
+        margin: auto;
+        display: flex;
+        position: relative;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .Content {
+        padding-top: 10%;
+    }
+
+    .pagina1Content {
+        padding-top: 0;
+    }
+
+    .side {
+        border-radius: 0;
+    }
+}

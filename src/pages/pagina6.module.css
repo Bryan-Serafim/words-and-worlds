@@ -1,0 +1,259 @@
+.page6__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.page6__header {
+    width: 100%;
+    text-align: left;
+    color: #a61c28;
+}
+
+.page6__header-subtitle {
+    color: black;
+}
+
+.page6__main {
+    width: 100%;
+    text-align: center;
+}
+
+.page6__aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page6__table-header {
+    background-color: #a61c28;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.page6__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+    table-layout: fixed;
+}
+
+.page6__table:nth-child(odd) {
+    margin-bottom: 0;
+}
+
+.page6__table thead tr {
+    background-color: #888a8c;
+    color: white;
+    font-weight: bold;
+}
+
+.page6__table th,
+.page6__table td {
+    border: 0.1rem solid #a61c28;
+    padding: 1rem;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+.page6__table tbody tr {
+    background-color: white;
+    max-width: 100%;
+    height: calc(7vw * 0.85);
+}
+
+.page6__table tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+.page6__table-input {
+    width: 100%;
+    height: calc(8vh * 0.85);
+    border: none;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    font-size: 1.8rem;
+}
+
+.page6__table-input:focus {
+    outline: none;
+    border: 0.1rem solid #f2f2f2;
+    background-color: white;
+}
+
+.page6__table-input::-webkit-scrollbar {
+    display: none;
+}
+
+.page6__table-subject {
+    width: calc(10vw * 0.85);
+}
+
+.page6__table-auxiliary {
+    width: calc(10vw * 0.85);
+}
+
+.page6__table-adverb {
+    width: calc(12vw * 0.85);
+}
+
+.page6__table-verb {
+    width: calc(12vw * 0.85);
+}
+
+.page6__table-complement {
+    width: calc(18vw * 0.85);
+}
+
+.page6__table-translation {
+    width: calc(18vw * 0.85);
+}
+
+.page6__new-aside-notes1 {
+    width:100%;
+    height: 4.5rem;
+    border: 0.4rem solid #0A3282;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
+    background-color: #0A3282;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.page6__new-aside-notes2 {
+    width: 100%;
+    height: 100%;
+    border: 0.4rem solid #0A3282;
+    border-top: 0.1rem;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    color: #103275;
+    margin-bottom: 4rem;
+}
+
+.page6__new-aside-notes2 p {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.page6__aside-notes1 {
+    width: 50%;
+    height: 4.5rem;
+    border: 0.4rem solid #0A3282;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
+    background-color: #0A3282;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.page6__aside-notes1 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.page6__aside-img {
+    height: calc(2rem + 0.8vw);
+    width: 4rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+.page6__aside-notes2 {
+    width: 50%;
+    height: 100%;
+    border: 0.4rem solid #0A3282;
+    border-top: 0.1rem;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    color: #103275;
+}
+
+.page6__aside-notes2 p {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.page6__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    position: relative;
+    top: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.page6__icon:hover {
+    transform: scale(1.2);
+}
+
+.page6__icon-left {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: relative;
+    right: 42%;
+    top: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.page6__icon-left:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+    .page6__table {
+        margin-bottom: 15%;
+    }
+
+    .page6__table th,
+    .page6__table td {
+        padding: 0.5rem;
+    }
+
+    .page6__table-input {
+        height: calc(6vw * 0.85);
+        padding: 0;
+    }
+
+    .page6__aside-notes1,
+    .page6__aside-notes2 {
+        width: 100%;
+    }
+
+    .page6__aside-notes1 p,
+    .page6__aside-notes2 p {
+        padding: 1rem;
+        font-size: 2.75rem;
+    }
+}
